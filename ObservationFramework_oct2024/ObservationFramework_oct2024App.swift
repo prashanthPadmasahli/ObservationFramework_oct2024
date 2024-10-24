@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ObservationFramework_oct2024App: App {
+    @State var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView4()
+                .environment(appState)
         }
     }
 }
